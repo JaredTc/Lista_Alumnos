@@ -16,21 +16,36 @@
     <title>Lista de Estudiantes</title>
   </head>
   <body>
-    <h1 style="text-align: center;">Lista de Estudiantes TintoCode</h1>
+  
 
-    <div class="container">
-        <div class="row">
+    <div class="container d-flex justify-content-center">
+      <div class="card">
+        <div class="card-body ">
+          <h1 style="text-align: center;"> Estudiantes TintoCode</h1>
+          <div class="d-flex  justify-content-center">
+            <img src="asset/undraw_Mobile_posts_re_bpuw.png" width="300" alt="">
+
+          </div>
+         
+          <div class="row" >
             <div class="col-8">
-                <input type="text" name="nameItem" id="nameItem" placeholder="Nombre del Estudiante" class="form-control">
-                <input type="number" name="priceItem" id="priceItem" placeholder="Edad" class="form-control">
-                <input type="text" name="descItem" id="descItem" placeholder="Profesión" class="form-control">
+                <input  type="text" name="nameItem" id="nameItem" placeholder="Nombre del Estudiante" class="form-control">
+                <br><input type="number" name="priceItem" id="priceItem" placeholder="Edad" class="form-control">
+               <br> <input type="text" name="descItem" id="descItem" placeholder="Profesión" class="form-control">
             </div>
             <div class="col-4">
-                <button class="btn btn-info" onclick="addItem()">Registrar</button>
+                <button class="btn " style="background-color: rgb(89, 0, 255); color: white;" onclick="addItem()">Registrar</button>
             </div>
         </div>
         <div id="showItemList">
+
         </div>
+
+        </div>
+        
+
+      </div>
+      
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

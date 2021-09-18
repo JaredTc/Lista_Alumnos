@@ -30,10 +30,10 @@ function addItem() {
 function studentList() {
   let html = "";
   itemList.forEach((i, index) => {
-    html += `<div class="row">
+    html += `<div class="row" style="padding-top: 5%">
                 <div class="col" > ${i.itemName}  </div>
-                <div class="col" > ${i.itemPrice} </div>
-                <div class="col" > ${i.itemDesc}  </div>
+                <div class="col" >  ${i.itemPrice} </div>
+                <div class="col" >   ${i.itemDesc}  </div>
                 <div class="col" > <button type="button" onclick="deleteItem(${index})" class="btn btn-danger" > X </button> </div> 
                 </div>`;
   });
